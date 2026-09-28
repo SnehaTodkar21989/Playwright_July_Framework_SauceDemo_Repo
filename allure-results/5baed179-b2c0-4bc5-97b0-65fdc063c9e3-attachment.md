@@ -1,0 +1,42 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: smoke\loginmultiuser.spec.js >> Login to Application with 1
+- Location: tests\smoke\loginmultiuser.spec.js:9:5
+
+# Error details
+
+```
+ReferenceError: loginPage is not defined
+```
+
+# Test source
+
+```ts
+  1  | import{test as base} from "@playwright/test"
+  2  | import {LoginPage} from "../pages/LoginPage.js"
+  3  | 
+  4  | 
+  5  | export const test =base.extend
+  6  | (
+  7  | {
+  8  | loginPage: async({page},use)=>
+  9  | 
+  10 |     {
+  11 | //Setting up fixture for login 
+  12 | console.log("Inside Login Page fixture")
+  13 | const login = new LoginPage(page)
+  14 | 
+> 15 | await use(loginPage);
+     |           ^ ReferenceError: loginPage is not defined
+  16 | 
+  17 | }
+  18 | }
+  19 | );
+  20 | 
+```

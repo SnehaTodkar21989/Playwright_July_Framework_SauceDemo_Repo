@@ -1,0 +1,4 @@
+Inside Login Page fixture
+Inside Dashboard Page fixture
+Inside Login Logout Spec page
+Userdata used is standard_user and secret_sauce
