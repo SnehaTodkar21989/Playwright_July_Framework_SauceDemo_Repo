@@ -1,1 +1,2 @@
 This demo file for git conflict
+Added changes in local to test git PR merge conflict feature
