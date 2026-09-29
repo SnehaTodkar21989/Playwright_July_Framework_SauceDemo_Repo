@@ -1,1 +1,2 @@
 This demo file for git conflict
+Added changes to test git conflict
