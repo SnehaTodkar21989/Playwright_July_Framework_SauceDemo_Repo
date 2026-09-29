@@ -1,2 +1,1 @@
 This demo file for git conflict
-Created this demo file for PR Merge conflict
