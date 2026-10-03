@@ -2,6 +2,8 @@ import {expect} from "@playwright/test"
 import {test} from  "../../fixtures/fixture.js"
 import userdata from '../../test-data/userdata.json'
 
+//Added below test for login logout
+
 test("Login Logout Test",async({page,loginPage,dashboardPage})=>
 
  {
